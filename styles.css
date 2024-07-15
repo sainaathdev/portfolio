@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: orange;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* .skill-card {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+} */
+
+.skill-card:hover {
+  /* background-color: #0056b3; */
+  transform: scale(1.05);
+}
+.skill-icon {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* .education-entry, .certificate-entry {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.education-entry h3, .certificate-entry h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.education-entry p, .certificate-entry a {
+    margin: 0.2rem 0;
+    font-style: italic;
+}
+
+.education-entry span, .certificate-entry a {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.certificate-entry a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.certificate-entry a:hover {
+    text-decoration: underline;
+} */
+
+.education-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--education-border);
+  border-radius: 10px;
+  background-color: var(--education-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 1rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
